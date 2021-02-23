@@ -39,20 +39,20 @@ export class AppComponent  {
       this.simbol = "0";
     }
 
-    if (this.koor2 == 1){
-      this.satu[this.koor1 - 1] = this.simbol
+    if (this.koor1 == 1){
+      this.satu[this.koor2 - 1] = this.simbol
     }
-    else if (this.koor2 == 2){
-      this.dua[this.koor1 - 1] = this.simbol
+    else if (this.koor1 == 2){
+      this.dua[this.koor2 - 1] = this.simbol
     }
-    else if (this.koor2 == 3){
-      this.tiga[this.koor1 - 1] = this.simbol
+    else if (this.koor1 == 3){
+      this.tiga[this.koor2 - 1] = this.simbol
     }
-    else if (this.koor2 == 4){
-      this.empat[this.koor1 - 1] = this.simbol
+    else if (this.koor1 == 4){
+      this.empat[this.koor2 - 1] = this.simbol
     }
-    else if (this.koor2 == 5){
-      this.lima[this.koor1 - 1] = this.simbol
+    else if (this.koor1 == 5){
+      this.lima[this.koor2 - 1] = this.simbol
     }
 
     if(this.player){
@@ -65,6 +65,10 @@ export class AppComponent  {
     }else{
       this.table = true;
     }
+
+
+
+    
   }
 
 }
