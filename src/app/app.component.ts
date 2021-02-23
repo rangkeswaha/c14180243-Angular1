@@ -40,7 +40,7 @@ export class AppComponent  {
     if(this.player){
       this.simbol = "1";
     }else{
-      this.simbol = "1";
+      this.simbol = "0";
     }
 
     if (this.koor1 == 1){
@@ -90,6 +90,8 @@ export class AppComponent  {
         break;
       }
     }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
     //dua
     for(var i = 0; i < 5; i++){
       if (this.dua[i] == "1"){
@@ -109,6 +111,8 @@ export class AppComponent  {
         break;
       }
     }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
     //tiga
     for(var i = 0; i < 5; i++){
       if (this.tiga[i] == "1"){
@@ -128,6 +132,8 @@ export class AppComponent  {
         break;
       }
     }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
     //empat
     for(var i = 0; i < 5; i++){
       if (this.empat[i] == "1"){
@@ -147,6 +153,8 @@ export class AppComponent  {
         break;
       }
     }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
     //lima
     for(var i = 0; i < 5; i++){
       if (this.lima[i] == "1"){
@@ -181,31 +189,31 @@ export class AppComponent  {
       this.checkwin1 += 1;
     }
     if(this.satu[0] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.dua[0] == "1"){
       this.checkwin1 += 1;
     }
     if(this.dua[0] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.tiga[0] == "1"){
       this.checkwin1 += 1;
     }
     if(this.tiga[0] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.empat[0] == "1"){
       this.checkwin1 += 1;
     }
     if(this.empat[0] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.lima[0] == "1"){
       this.checkwin1 += 1;
     }
     if(this.lima[0] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     //check menang
     if (this.checkwin1 >= 4){
@@ -230,31 +238,31 @@ export class AppComponent  {
       this.checkwin1 += 1;
     }
     if(this.satu[1] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.dua[1] == "1"){
       this.checkwin1 += 1;
     }
     if(this.dua[1] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.tiga[1] == "1"){
       this.checkwin1 += 1;
     }
     if(this.tiga[1] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.empat[1] == "1"){
       this.checkwin1 += 1;
     }
     if(this.empat[1] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.lima[1] == "1"){
       this.checkwin1 += 1;
     }
     if(this.lima[1] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     //check menang
     if (this.checkwin1 >= 4){
@@ -279,31 +287,31 @@ export class AppComponent  {
       this.checkwin1 += 1;
     }
     if(this.satu[2] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.dua[2] == "1"){
       this.checkwin1 += 1;
     }
     if(this.dua[2] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.tiga[2] == "1"){
       this.checkwin1 += 1;
     }
     if(this.tiga[2] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.empat[2] == "1"){
       this.checkwin1 += 1;
     }
     if(this.empat[2] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.lima[2] == "1"){
       this.checkwin1 += 1;
     }
     if(this.lima[2] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     //check menang
     if (this.checkwin1 >= 4){
@@ -328,31 +336,31 @@ export class AppComponent  {
       this.checkwin1 += 1;
     }
     if(this.satu[3] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.dua[3] == "1"){
       this.checkwin1 += 1;
     }
     if(this.dua[3] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.tiga[3] == "1"){
       this.checkwin1 += 1;
     }
     if(this.tiga[3] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.empat[3] == "1"){
       this.checkwin1 += 1;
     }
     if(this.empat[3] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.lima[3] == "1"){
       this.checkwin1 += 1;
     }
     if(this.lima[3] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     //check menang
     if (this.checkwin1 >= 4){
@@ -377,31 +385,31 @@ export class AppComponent  {
       this.checkwin1 += 1;
     }
     if(this.satu[4] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.dua[4] == "1"){
       this.checkwin1 += 1;
     }
     if(this.dua[4] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.tiga[4] == "1"){
       this.checkwin1 += 1;
     }
     if(this.tiga[4] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.empat[4] == "1"){
       this.checkwin1 += 1;
     }
     if(this.empat[4] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     if(this.lima[4] == "1"){
       this.checkwin1 += 1;
     }
     if(this.lima[4] == "0"){
-      this.checkwin1 += 1;
+      this.checkwin0 += 1;
     }
     //check menang
     if (this.checkwin1 >= 4){
