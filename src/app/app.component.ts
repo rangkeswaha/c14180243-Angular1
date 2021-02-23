@@ -13,6 +13,10 @@ export class AppComponent  {
   koor1 = 0;
   koor2 = 0;
   table = true;
+  checkwin1 = 0;
+  checkwin0 = 0;
+  p1 : Boolean = false;
+  p0 : Boolean = false;
 
   satu = [
     "*","*","*","*","*"
@@ -66,9 +70,119 @@ export class AppComponent  {
       this.table = true;
     }
 
+    //horizontal
+    //satu
+    for(var i = 0; i < 5; i++){
+      if (this.satu[i] == "1"){
+        this.checkwin1 += 1;
+      }
+      if (this.satu[i] == "0"){
+        this.checkwin0 += 1;
+      }
+      if (this.checkwin1 == 4){
+        this.menang = true;
+        this.p1 = true;
+        break;
+      }
+      if (this.checkwin0 == 4){
+        this.menang = true;
+        this.p0 = true;
+        break;
+      }
+    }
+    //dua
+    for(var i = 0; i < 5; i++){
+      if (this.dua[i] == "1"){
+        this.checkwin1 += 1;
+      }
+      if (this.dua[i] == "0"){
+        this.checkwin0 += 1;
+      }
+      if (this.checkwin1 == 4){
+        this.menang = true;
+        this.p1 = true;
+        break;
+      }
+      if (this.checkwin0 == 4){
+        this.menang = true;
+        this.p0 = true;
+        break;
+      }
+    }
+    //tiga
+    for(var i = 0; i < 5; i++){
+      if (this.tiga[i] == "1"){
+        this.checkwin1 += 1;
+      }
+      if (this.tiga[i] == "0"){
+        this.checkwin0 += 1;
+      }
+      if (this.checkwin1 == 4){
+        this.menang = true;
+        this.p1 = true;
+        break;
+      }
+      if (this.checkwin0 == 4){
+        this.menang = true;
+        this.p0 = true;
+        break;
+      }
+    }
+    //empat
+    for(var i = 0; i < 5; i++){
+      if (this.empat[i] == "1"){
+        this.checkwin1 += 1;
+      }
+      if (this.empat[i] == "0"){
+        this.checkwin0 += 1;
+      }
+      if (this.checkwin1 == 4){
+        this.menang = true;
+        this.p1 = true;
+        break;
+      }
+      if (this.checkwin0 == 4){
+        this.menang = true;
+        this.p0 = true;
+        break;
+      }
+    }
+    //lima
+    for(var i = 0; i < 5; i++){
+      if (this.lima[i] == "1"){
+        this.checkwin1 += 1;
+      }
+      if (this.lima[i] == "0"){
+        this.checkwin0 += 1;
+      }
+      if (this.checkwin1 == 4){
+        this.menang = true;
+        this.p1 = true;
+        break;
+      }
+      if (this.checkwin0 == 4){
+        this.menang = true;
+        this.p0 = true;
+        break;
+      }
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
 
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
+    }
 
-    
+    //vertical
+    for(var i = 0; i < 5; i++){
+      for(var j = 0; j < 5; j++){
+        
+      }
+    }
+
   }
 
 }
