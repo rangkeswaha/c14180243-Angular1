@@ -12,6 +12,7 @@ export class AppComponent  {
   menang : Boolean = false;
   koor1 = 0;
   koor2 = 0;
+  table = true;
 
   satu = [
     "*","*","*","*","*"
@@ -58,6 +59,11 @@ export class AppComponent  {
       this.player = false;
     }else{
       this.player = true;
+    }
+    if(this.table){
+      this.table = false;
+    }else{
+      this.table = true;
     }
   }
 

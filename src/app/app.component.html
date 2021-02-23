@@ -42,7 +42,11 @@ kolom <input type="text" [(ngModel)]="koor2">
 <br><br>
 <button (click)="check()">Input Koordinat</button>
 <br><br>
-<div style="inline-block">
+
+<ng-template *ngIf="table; then tabletrue; else tablefalse"></ng-template>
+
+<ng-template #tabletrue>
+  <div style="inline-block">
   <div  *ngFor="let game1 of satu; let game2 of dua; let game3 of tiga; let game4 of empat; let game5 of lima">
     {{game1}}
     {{game2}}
@@ -51,6 +55,19 @@ kolom <input type="text" [(ngModel)]="koor2">
     {{game5}}
   </div>
 </div>
+</ng-template>
+
+<ng-template #tablefalse>
+  <div style="inline-block">
+  <div  *ngFor="let game1 of satu; let game2 of dua; let game3 of tiga; let game4 of empat; let game5 of lima">
+    {{game1}}
+    {{game2}}
+    {{game3}}
+    {{game4}}
+    {{game5}}
+  </div>
+</div>
+</ng-template>
 
 
 <h1 *ngIf="menang">Player {{nama}} Menang</h1>
