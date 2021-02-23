@@ -40,7 +40,7 @@ export class AppComponent  {
     if(this.player){
       this.simbol = "1";
     }else{
-      this.simbol = "0";
+      this.simbol = "1";
     }
 
     if (this.koor1 == 1){
@@ -155,12 +155,12 @@ export class AppComponent  {
       if (this.lima[i] == "0"){
         this.checkwin0 += 1;
       }
-      if (this.checkwin1 == 4){
+      if (this.checkwin1 >= 4){
         this.menang = true;
         this.p1 = true;
         break;
       }
-      if (this.checkwin0 == 4){
+      if (this.checkwin0 >= 4){
         this.menang = true;
         this.p0 = true;
         break;
@@ -168,7 +168,6 @@ export class AppComponent  {
     }
     this.checkwin1 = 0;
     this.checkwin0 = 0;
-
     if(this.p1){
       this.nama = "1";
     }
@@ -177,10 +176,249 @@ export class AppComponent  {
     }
 
     //vertical
-    for(var i = 0; i < 5; i++){
-      for(var j = 0; j < 5; j++){
-        
-      }
+    //pertama
+    if(this.satu[0] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.satu[0] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[0] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[0] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[0] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[0] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[0] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[0] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[0] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[0] == "0"){
+      this.checkwin1 += 1;
+    }
+    //check menang
+    if (this.checkwin1 >= 4){
+      this.menang = true;
+      this.p1 = true;
+    }
+    if (this.checkwin0 >= 4){
+      this.menang = true;
+      this.p0 = true;
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
+    }
+
+    //kedua
+    if(this.satu[1] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.satu[1] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[1] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[1] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[1] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[1] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[1] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[1] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[1] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[1] == "0"){
+      this.checkwin1 += 1;
+    }
+    //check menang
+    if (this.checkwin1 >= 4){
+      this.menang = true;
+      this.p1 = true;
+    }
+    if (this.checkwin0 >= 4){
+      this.menang = true;
+      this.p0 = true;
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
+    }
+
+    //ketiga
+    if(this.satu[2] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.satu[2] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[2] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[2] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[2] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[2] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[2] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[2] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[2] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[2] == "0"){
+      this.checkwin1 += 1;
+    }
+    //check menang
+    if (this.checkwin1 >= 4){
+      this.menang = true;
+      this.p1 = true;
+    }
+    if (this.checkwin0 >= 4){
+      this.menang = true;
+      this.p0 = true;
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
+    }
+
+    //keempat
+    if(this.satu[3] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.satu[3] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[3] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[3] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[3] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[3] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[3] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[3] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[3] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[3] == "0"){
+      this.checkwin1 += 1;
+    }
+    //check menang
+    if (this.checkwin1 >= 4){
+      this.menang = true;
+      this.p1 = true;
+    }
+    if (this.checkwin0 >= 4){
+      this.menang = true;
+      this.p0 = true;
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
+    }
+
+    //kelima
+    if(this.satu[4] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.satu[4] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[4] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.dua[4] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[4] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.tiga[4] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[4] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.empat[4] == "0"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[4] == "1"){
+      this.checkwin1 += 1;
+    }
+    if(this.lima[4] == "0"){
+      this.checkwin1 += 1;
+    }
+    //check menang
+    if (this.checkwin1 >= 4){
+      this.menang = true;
+      this.p1 = true;
+    }
+    if (this.checkwin0 >= 4){
+      this.menang = true;
+      this.p0 = true;
+    }
+    this.checkwin1 = 0;
+    this.checkwin0 = 0;
+    if(this.p1){
+      this.nama = "1";
+    }
+    if(this.p0){
+      this.nama = "0";
     }
 
   }
