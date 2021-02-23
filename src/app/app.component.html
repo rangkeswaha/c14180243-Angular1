@@ -26,7 +26,34 @@ maka board berubah menjadi :
 * * * * *
 * * * * * 
 -->
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>Tic Tac Toe </h1>
+
+<ng-template *ngIf="player; then templatetrue; else templatefalse"></ng-template>
+<ng-template #templatetrue>
+  <p>Player 1</p>
+</ng-template>
+
+<ng-template #templatefalse>
+  <p>Player 0</p>
+</ng-template>
+
+baris <input type="text" [(ngModel)]="koor1">
+kolom <input type="text" [(ngModel)]="koor2">
+<br><br>
+<button (click)="check()">Input Koordinat</button>
+<br><br>
+<div style="inline-block">
+  <div  *ngFor="let game1 of satu; let game2 of dua; let game3 of tiga; let game4 of empat; let game5 of lima">
+    {{game1}}
+    {{game2}}
+    {{game3}}
+    {{game4}}
+    {{game5}}
+  </div>
+</div>
+
+
+<h1 *ngIf="menang">Player {{nama}} Menang</h1>
+
+{{satu[0]}}
+
